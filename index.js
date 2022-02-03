@@ -222,6 +222,7 @@ app.post("/api/login", async (req, res) => {
     );
 
     return res.json({ status: "ok", user: token });
+    console.log(user);
   } else {
     return res.json({ status: "error", user: "false" });
   }
